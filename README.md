@@ -1,7 +1,7 @@
 # airflow_task
 
 
-***AD_HOC_MAINTENANCE***
+✅ ***AD_HOC_MAINTENANCE***
 
 This DAG is designed for maintenance operations on the de_assignment database.
 It performs the following tasks:
@@ -33,7 +33,7 @@ Design Choices:
 - Archiving is separated into its own task for easier scaling (e.g., partitioning support in the future).
 
 
-***AIRPORTS_ONE_LOVE***
+✅ ***AIRPORTS_ONE_LOVE***
 
 This DAG is designed for ETL operations with the airports dataset.
 It performs the following tasks:
@@ -69,7 +69,7 @@ Design Choices:
  - Retries with exponential backoff add fault tolerance for network or API issues.
 
 
-***DAILY_PROCESSING_PIPELINE***
+✅ ***DAILY_PROCESSING_PIPELINE***
 
 This DAG is designed for daily ETL processing of user activity data in the de_assignment database.
 It performs the following tasks:
@@ -110,7 +110,7 @@ Design Choices
  - Temporary staging table (temp_daily_activity_metrics) ensures separation between raw and aggregated data.
 
 
-***DAILY_PROCESSING_PIPELINE***
+✅ ***DAILY_PROCESSING_PIPELINE***
 
 This DAG is designed to perform weekly segmentation of users in the de_assignment database.
 It evaluates user activity for the past week and updates user tiers (bronze, silver, gold) based on activity levels.
