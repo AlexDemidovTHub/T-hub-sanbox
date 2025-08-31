@@ -74,7 +74,6 @@ def transform_data(**context):
     data = ti.xcom_pull(key='user_activity')
     df = pd.DataFrame(data, columns=['user_id', 'activity_date', 'activity_type', 'duration_minutes'])
 
-    selected_rows = len(df)
 
     # Дополняем DataFrame названием дня недели
     df['activity_date'] = pd.to_datetime(df['activity_date'])
